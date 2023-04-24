@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button button1,button2,button3,button4,button5,button6;
+    MainActivity mainActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,15 +33,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view.getId()==button1.getId())
         {
-
+            Intent intent = new Intent(MainActivity.this,No_time.class);
+            startActivity(intent);
         }
         if (view.getId()==button2.getId())
         {
-
+            Intent intent = new Intent(MainActivity.this,Normal.class);
+            startActivity(intent);
         }
         if (view.getId()==button3.getId())
         {
-
+            Intent intent = new Intent(MainActivity.this,Hard.class);
+            startActivity(intent);
         }
         if (view.getId()==button4.getId())
         {
