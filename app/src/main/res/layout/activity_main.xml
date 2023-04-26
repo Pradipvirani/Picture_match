@@ -15,7 +15,7 @@
         android:layout_height="@dimen/_450sdp"
         android:orientation="vertical"
         android:gravity="center"
-        android:background="@drawable/main_picture"
+        android:background="@drawable/picture_match"
         >
     <LinearLayout
         android:layout_width="wrap_content"
