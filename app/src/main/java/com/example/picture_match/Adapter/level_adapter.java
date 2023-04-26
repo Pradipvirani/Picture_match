@@ -1,4 +1,4 @@
-package com.example.picture_match;
+package com.example.picture_match.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+
+import com.example.picture_match.R;
 
 public class level_adapter extends BaseAdapter {
      Context context;

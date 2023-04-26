@@ -1,4 +1,4 @@
-package com.example.picture_match;
+package com.example.picture_match.Activity;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +10,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
-import android.widget.Toast;
+
+import com.example.picture_match.Adapter.level_adapter;
+import com.example.picture_match.R;
 
 public class No_time extends AppCompatActivity implements View.OnClickListener {
     GridView gridView;

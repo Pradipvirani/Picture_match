@@ -4,10 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".Activity.MainActivity"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#EAF4F3">
+    android:background="#E3F4F3"
+    app:backgroundTint="@null"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_450sdp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/main_picture"
+        >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,7 +30,7 @@
             android:text="NO TIME LIMIT"
             android:textStyle="bold"
             app:backgroundTint="@null"
-            android:background="@color/teal_700"
+            android:background="#055958"
             android:id="@+id/no_time"/>
         <Button
             android:layout_width="match_parent"
@@ -30,7 +39,7 @@
             android:text="NORMAL"
             android:textStyle="bold"
             app:backgroundTint="@null"
-            android:background="@color/teal_700"
+            android:background="#055958"
             android:id="@+id/normal"/>
         <Button
             android:layout_width="match_parent"
@@ -39,7 +48,7 @@
             android:text="HARD"
             android:textStyle="bold"
             app:backgroundTint="@null"
-            android:background="@color/teal_700"
+            android:background="#055958"
             android:id="@+id/hard"/>
 
     </LinearLayout>
@@ -57,7 +66,7 @@
             android:text="REMOVE ADS"
             android:textStyle="bold"
             app:backgroundTint="@null"
-            android:background="@color/teal_700"
+            android:background="#055958"
             android:id="@+id/remove_ads"
         />
     </LinearLayout>
@@ -75,7 +84,7 @@
             android:text="SHARE"
             android:textStyle="bold"
             app:backgroundTint="@null"
-            android:background="@color/teal_700"
+            android:background="#055958"
             android:id="@+id/share"
             />
         <Button
@@ -85,8 +94,9 @@
             android:text="MORE GAMES"
             android:textStyle="bold"
             app:backgroundTint="@null"
-            android:background="@color/teal_700"
+            android:background="#055952"
             android:id="@+id/more_games"
             />
+    </LinearLayout>
     </LinearLayout>
 </LinearLayout>
