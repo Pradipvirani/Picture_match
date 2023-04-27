@@ -10,93 +10,99 @@
     android:background="#E3F4F3"
     app:backgroundTint="@null"
     >
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_450sdp"
-        android:orientation="vertical"
-        android:gravity="center"
+        android:layout_height="628dp"
         android:background="@drawable/picture_match"
-        >
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:backgroundTint="@null"
-        android:background="@drawable/main_draweble">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_10sdp"
-            android:text="NO TIME LIMIT"
-            android:textStyle="bold"
-            app:backgroundTint="@null"
-            android:background="#055958"
-            android:id="@+id/no_time"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_10sdp"
-            android:text="NORMAL"
-            android:textStyle="bold"
-            app:backgroundTint="@null"
-            android:background="#055958"
-            android:id="@+id/normal"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_10sdp"
-            android:text="HARD"
-            android:textStyle="bold"
-            app:backgroundTint="@null"
-            android:background="#055958"
-            android:id="@+id/hard"/>
+        android:gravity="center"
+        android:orientation="vertical">
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:backgroundTint="@null"
-        android:background="@drawable/main_draweble"
-        android:layout_marginTop="@dimen/_30sdp">
-        <Button
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_10sdp"
-            android:text="REMOVE ADS"
-            android:textStyle="bold"
-            app:backgroundTint="@null"
-            android:background="#055958"
-            android:id="@+id/remove_ads"
-        />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:backgroundTint="@null"
-        android:background="@drawable/main_draweble"
-        android:layout_marginTop="@dimen/_30sdp">
-        <Button
-            android:layout_width="match_parent"
+            android:background="@drawable/main_draweble"
+            android:orientation="vertical"
+            app:backgroundTint="@null">
+
+            <Button
+                android:id="@+id/no_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#055958"
+                android:text="NO TIME LIMIT"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#055958"
+                android:text="NORMAL"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/hard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#055958"
+                android:text="HARD"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_10sdp"
-            android:text="SHARE"
-            android:textStyle="bold"
-            app:backgroundTint="@null"
-            android:background="#055958"
-            android:id="@+id/share"
-            />
-        <Button
-            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/main_draweble"
+            android:orientation="vertical"
+            app:backgroundTint="@null">
+
+            <Button
+                android:id="@+id/remove_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#055958"
+                android:text="REMOVE ADS"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_10sdp"
-            android:text="MORE GAMES"
-            android:textStyle="bold"
-            app:backgroundTint="@null"
-            android:background="#055952"
-            android:id="@+id/more_games"
-            />
-    </LinearLayout>
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/main_draweble"
+            android:orientation="horizontal"
+            app:backgroundTint="@null">
+
+            <Button
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#055958"
+                android:text="SHARE"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/more_games"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#055952"
+                android:text="MORE GAMES"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
