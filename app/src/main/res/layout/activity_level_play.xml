@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/progress"
         android:layout_centerHorizontal="true"
-        android:layout_centervertical="true"
+
         />
 </LinearLayout>
     <LinearLayout
