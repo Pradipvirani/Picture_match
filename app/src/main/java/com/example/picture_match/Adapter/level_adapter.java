@@ -2,6 +2,7 @@ package com.example.picture_match.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,14 +16,19 @@ public class level_adapter extends BaseAdapter {
      Context context;
     Button button;
     int level[]={1,2,3,4,5,6,7,8,9,10};
-    public level_adapter(Context context) {
+    SharedPreferences preferences;
+
+    String mode;
+    public level_adapter(Context context, String mode) {
         this.context = context;
+        this.mode=mode;
+        preferences=context.getSharedPreferences("pref",Context.MODE_PRIVATE);
     }
 
 
     @Override
     public int getCount() {
-        return 10;
+        return level.length;
     }
 
     @Override
@@ -44,6 +50,7 @@ public class level_adapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, Level_play.class);
+                intent.putExtra("mode",mode);
                 intent.putExtra("level",level[i]);
                 context.startActivity(intent);
             }

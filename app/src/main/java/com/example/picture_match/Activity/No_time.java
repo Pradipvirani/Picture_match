@@ -4,34 +4,35 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
-import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 
 import com.example.picture_match.Adapter.level_adapter;
 import com.example.picture_match.R;
 
-public class No_time extends AppCompatActivity implements View.OnClickListener {
+public class No_time extends AppCompatActivity  {
     GridView gridView;
     Button button;
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor;
+    String mode;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_no_time);
         gridView=findViewById(R.id.no_time_grid_view);
         button=findViewById(R.id.question_button);
-        level_adapter level_adapter = new level_adapter(No_time.this);
+        mode=getIntent().getStringExtra("mode");
+        level_adapter level_adapter = new level_adapter(No_time.this, mode);
         gridView.setAdapter(level_adapter);
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(No_time.this,Level_play.class);
-                startActivity(intent);
-            }
-        });
+        preferences=getSharedPreferences("pref",MODE_PRIVATE);
+        editor= preferences.edit();
+        editor.putInt("lastlevel",-1);
+        editor.commit();
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,8 +54,5 @@ public class No_time extends AppCompatActivity implements View.OnClickListener {
         });
     }
 
-    @Override
-    public void onClick(View view) {
 
-    }
 }

@@ -36,16 +36,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view.getId()==button1.getId())
         {
             Intent intent = new Intent(MainActivity.this,No_time.class);
+            intent.putExtra("mode","notime");
             startActivity(intent);
         }
         if (view.getId()==button2.getId())
         {
             Intent intent = new Intent(MainActivity.this,Normal.class);
+            intent.putExtra("mode","normal");
             startActivity(intent);
         }
         if (view.getId()==button3.getId())
         {
             Intent intent = new Intent(MainActivity.this,Hard.class);
+            intent.putExtra("mode","hard");
             startActivity(intent);
         }
         if (view.getId()==button4.getId())
